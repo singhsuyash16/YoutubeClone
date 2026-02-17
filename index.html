@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8XE2T0YQ7S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-8XE2T0YQ7S');
-</script>
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8XE2T0YQ7S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8XE2T0YQ7S');
+  </script>
+
   <meta charset="UTF-8">
-  <title>YouTube Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>YouTube Clone | Video Streaming Website</title>
+  <meta name="description" content="A YouTube clone website built using HTML and CSS for SEO and web analytics learning.">
+  <meta name="keywords" content="YouTube Clone, HTML CSS Project, SEO Website, Web Analytics">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://www.example.com/youtube-clone">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="YouTube Clone Website">
+  <meta property="og:description" content="User engagement and SEO demonstration website.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.example.com/youtube-clone">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
   <!-- Header -->
   <header class="header">
     <div class="logo">YouTube</div>
-    <input type="text" placeholder="Search">
+    <input type="text" placeholder="Search videos" aria-label="Search videos">
     <button>Search</button>
   </header>
 
-  <!-- Main Layout -->
+  <!-- Layout -->
   <div class="container">
 
     <!-- Sidebar -->
@@ -34,8 +52,10 @@
       <a href="#">📚 Library</a>
     </aside>
 
-    <!-- Videos Section -->
+    <!-- Main Content -->
     <main class="videos">
+      <h1 class="visually-hidden">YouTube Clone Video Platform</h1>
+
       <div class="video-card">
         <div class="thumbnail"></div>
         <h3>Sample Video Title</h3>
@@ -56,10 +76,10 @@
         <p>Code Channel</p>
         <span>200K views • 1 week ago</span>
       </div>
+
     </main>
 
   </div>
 
 </body>
 </html>
-
